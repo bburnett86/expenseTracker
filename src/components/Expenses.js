@@ -1,10 +1,10 @@
+import Card from "./Card"
 import ExpenseItem from "./ExpenseItem"
 import "./Expenses.css"
 
 function Expenses(props) {
-  console.log(props.expenses.length)
   return (
-    <div>
+    <Card>
       {props.expenses.map((expense) => (
         <ExpenseItem 
         title={expense.title}
@@ -12,7 +12,7 @@ function Expenses(props) {
         date={expense.date}
       />
       ))}
-    </div>
+    </Card>
   )
 }
 
