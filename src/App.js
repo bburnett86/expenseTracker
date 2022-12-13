@@ -32,7 +32,7 @@ function App() {
   ];
 
   const addExpenseHandler = (expense) => {
-    console.log(expense);
+    // console.log(expense);
   };
 
   return (
